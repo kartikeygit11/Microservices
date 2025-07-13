@@ -7,6 +7,8 @@ import com.learningmicroservices.accounts.dto.AccountsDto;
 import com.learningmicroservices.accounts.dto.CustomerDto;
 import com.learningmicroservices.accounts.entity.Accounts;
 import com.learningmicroservices.accounts.entity.Customer;
+import com.learningmicroservices.accounts.exceptions.CustomerAlreadyExistsException;
+import com.learningmicroservices.accounts.exceptions.ResourceNotFoundException;
 import com.learningmicroservices.accounts.mapper.AccountsMapper;
 import com.learningmicroservices.accounts.mapper.CustomerMapper;
 import com.learningmicroservices.accounts.service.IAccountsService;
@@ -52,10 +54,7 @@ public class AccountsServiceImpl  implements IAccountsService {
     /**
      * @param customerDto - CustomerDto Object
      */
-    @Override
-    public void createAccount(CustomerDto customerDto) {
 
-    }
 
     /**
      * @param mobileNumber - Input Mobile Number
